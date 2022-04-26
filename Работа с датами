@@ -1,0 +1,40 @@
+import java.time.LocalDate;
+
+
+public class Solution {
+
+    public static void main(String[] args) {
+        System.out.println(nowExample());
+        System.out.println(ofExample());
+        System.out.println(ofYearDayExample());
+        System.out.println(ofEpochDayExample());
+    }
+
+    static LocalDate nowExample() {
+        LocalDate date = LocalDate.now();
+        //Возвращаем текущую дату
+
+        return date;
+    }
+
+    static LocalDate ofExample() {
+        LocalDate date = LocalDate.of(2020, 9, 12);
+        //Возвращаем дату с помощью метода LocalDate.of
+
+        return date;
+    }
+
+    static LocalDate ofYearDayExample() {
+        LocalDate date = LocalDate.ofYearDay(2020, 256);
+        //Возвращаем дату с помощью метода LocalDate.ofYearDay
+
+        return date;
+    }
+
+    static LocalDate ofEpochDayExample() {
+        LocalDate date = LocalDate.ofEpochDay(18517);
+        //Возвращаем дату с помощью метода LocalDate.ofEpochDay
+
+        return date;
+    }
+}
